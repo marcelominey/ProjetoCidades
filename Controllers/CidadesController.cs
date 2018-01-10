@@ -12,5 +12,14 @@ namespace ProjetoCidades.Controllers
 
             return View(lista);
         }
+        public IActionResult CidadesEstados(){
+            //vai lá dentro da View procurar esse arquivo CidaedesEstados
+            var lista = cidade.ListarCidades();
+            return View(lista);
+        }
+        public IActionResult TodosOsDados(){
+            var lista = cidade.ListarCidades();
+            return View(lista);
+        }
     }
 }
